@@ -1,0 +1,163 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    height: 100dvh;
+    justify-items: center;
+    align-items: center;
+    background-color: black;
+}
+
+nav {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: sticky;
+    top: 0;
+    width: 100dvw;
+    z-index: 1000;
+    font-size: 24px;
+    background-color: rgb(49, 47, 47);
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    margin-bottom: auto;
+}
+svg {
+    fill: aliceblue;
+}
+svg:hover {
+    fill: gray;
+}
+a {
+    text-decoration: none;
+    color: aliceblue;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+a:hover {
+    cursor: pointer;
+    color: gray;
+    text-decoration: underline;
+}
+
+header {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+    width: 100dvw;
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+}
+
+img {
+    border: double gray 1pt;
+    border-radius: 10pt;
+    height: 500px;
+}
+h2 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+}
+main {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    width: 100dvw;
+    padding: 5px;
+}
+#mainBody {
+    color: aliceblue;
+    border: solid gray 1pt;
+    border-radius: 10pt;
+    position: relative;
+    padding: 2%;
+    margin: 2%;
+    width: 90dvw;
+}
+ul {
+    color: aliceblue;
+}
+title {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+}
+.lawn {
+    background-color: maroon;
+}
+.vE {
+    background-color: cadetblue;
+}
+.ncm {
+    background-color: darkgray;
+}
+.ups {
+    background-color: rgb(121, 54, 39);
+}
+.pT {
+    background-color: rgb(116, 82, 39);
+}
+.char {
+    background-color: darkgreen;
+}
+.abilities {
+    background-color: darkolivegreen;
+}
+.high {
+    background-color: darkcyan;
+}
+.octc {
+    background-color: cadetblue;
+}
+.cert {
+    background-color: darkslateblue;
+}
+
+footer {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    gap: 1em;
+    background-color: gray;
+    position: relative;
+    align-items: center;
+    justify-items: center;
+    width: 100dvw;
+    margin-top: auto;
+
+}
+
+
+
+
+/* Media Queries
+I did mobile-first, wanted to see if it's easier for me this way
+*/
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    nav {
+        font-size: 30px;
+    }
+    .hide-on-mobile {
+        display: none;
+    }
+} 
+/* Laptops/Desktops */
+@media screen and (max-width: 1024px) {
+    .hide-on-mobile {
+        display: show;
+    }
+}
+/* Extra Large Screens */
+@media screen and (min-width: 1200px) {
+    .hide-on-mobile {
+        display: show;
+    }
+}
